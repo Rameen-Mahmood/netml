@@ -971,8 +971,8 @@ class PCAP:
         """
         with PcapReader(self.pcap_file) as pcap_reader:
             for pkt in pcap_reader:
-                if Ether not in pkt:
-                    continue
+                # if Ether not in pkt:
+                #     continue
 
                 pkt_dict = {
                     'time': pkt.time,
