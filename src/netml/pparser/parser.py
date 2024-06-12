@@ -978,8 +978,8 @@ class PCAP:
                     'time': pkt.time,
                     'datetime': datetime.fromtimestamp(int(pkt.time)),
                     'length': len(pkt),
-                    'mac_dst': pkt[Ether].dst,
-                    'mac_src': pkt[Ether].src,
+                    'mac_dst': '000000000000',  # Dummy value
+                    'mac_src': '111111111111',  # Dummy value
                     'ip_dst': None,
                     'ip_src': None,
                     'protocol': None,
